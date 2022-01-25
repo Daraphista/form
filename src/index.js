@@ -79,6 +79,7 @@ country.addEventListener("input", (e) => {
     countryError.className = "error";
   } else if (country.input != /[Pp]hilippines/) {
     console.log("lmao mali");
+    country.style.backgroundColor = "red";
     countryError.textContent = "That's not a country";
     countryError.className = "error active";
   }
