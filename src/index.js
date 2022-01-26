@@ -91,6 +91,7 @@ zipCode.addEventListener("input", (e) => {
     zipCodeError.className = "error";
   } else {
     // if (zipCode.value != /^[0-9]*%/)
+    zipCode.style.backgroundColor = "red";
     showError(zipCode, zipCodeError, "Zip code");
   }
 });
