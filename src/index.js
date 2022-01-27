@@ -101,6 +101,7 @@ password.addEventListener("input", (e) => {
     passwordError.textContent = "";
     passwordError.className = "error";
   } else {
+    password.style.backgroundColor = "red";
     showError(password, passwordError, "password");
   }
 });
